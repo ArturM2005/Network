@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="post" action="{ % url Registration:index % }">
+    <form method="post">
+        {% csrf_token %}
         {{ form }}
         <input type="password">
         <button type="submit"></button>
