@@ -6,8 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="Get">
-        <input type="text">
+    <form method="post" action="{ % url Registration:index % }">
+        {{ form }}
+        <input type="password">
         <button type="submit"></button>
     </form>
 </body>
